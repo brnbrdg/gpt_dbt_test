@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: instagram_metrics
+    description: "Metrics for Instagram media posts"
+    columns:
+      - name: creation_date
+        description: "The day a piece of media was created"
+      - name: platform
+        description: "The platform (Instagram)"
+      - name: media_produced
+        description: "The number of media posts created on the given day"
+
+  - name: youtube_metrics
+    description: "Metrics for YouTube media posts"
+    columns:
+      - name: creation_date
+        description: "The day a piece of media was created"
+      - name: platform
+        description: "The platform (YouTube)"
+      - name: media_produced
+        description: "The number of media posts created on the given day"
+

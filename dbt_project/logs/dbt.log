@@ -1,0 +1,297 @@
+[0m14:21:40.892798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aeb520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114022b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114022d60>]}
+
+
+============================== 14:21:40.895611 | 1e0d3834-ce01-42e8-941a-04ff44cd9e2b ==============================
+[0m14:21:40.895611 [info ] [MainThread]: Running with dbt=1.8.0
+[0m14:21:40.895962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/kvalkenier/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/kvalkenier/Desktop/gpt_dbt_test/dbt_project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:21:40.898293 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'your_profile_name'
+[0m14:21:40.936309 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.07966375, "process_user_time": 0.727941, "process_kernel_time": 0.145267, "process_mem_max_rss": "90488832", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:21:40.936907 [debug] [MainThread]: Command `dbt run` failed at 14:21:40.936829 after 0.08 seconds
+[0m14:21:40.937263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aeb520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113db56d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11171b8b0>]}
+[0m14:21:40.937658 [debug] [MainThread]: Flushing usage events
+[0m14:21:53.565260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e97520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b0db80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b0dd60>]}
+
+
+============================== 14:21:53.567968 | 7c61cdac-3d1f-4b07-aa14-0412c93f969e ==============================
+[0m14:21:53.567968 [info ] [MainThread]: Running with dbt=1.8.0
+[0m14:21:53.568308 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/kvalkenier/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/kvalkenier/Desktop/gpt_dbt_test/dbt_project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:21:56.499148 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m14:21:56.499536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '7c61cdac-3d1f-4b07-aa14-0412c93f969e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f1d0490>]}
+[0m14:21:56.639844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7c61cdac-3d1f-4b07-aa14-0412c93f969e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f21d910>]}
+[0m14:21:56.666342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7c61cdac-3d1f-4b07-aa14-0412c93f969e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10894a0d0>]}
+[0m14:21:56.667027 [info ] [MainThread]: Registered adapter: snowflake=1.8.1
+[0m14:21:56.716099 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m14:21:56.716747 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:21:56.717090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7c61cdac-3d1f-4b07-aa14-0412c93f969e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f2ade20>]}
+[0m14:21:57.301107 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.social_media_metrics.instagram_metrics' (models/instagram_metrics.sql) depends on a node named 'INSTAGRAM_BUSINESS.MEDIA_HISTORY' which was not found
+[0m14:21:57.350044 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.821404, "process_user_time": 3.996039, "process_kernel_time": 0.417341, "process_mem_max_rss": "176652288", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:21:57.350567 [debug] [MainThread]: Command `dbt run` failed at 14:21:57.350496 after 3.82 seconds
+[0m14:21:57.350871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e97520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f895fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f8aa8b0>]}
+[0m14:21:57.351158 [debug] [MainThread]: Flushing usage events
+[0m14:24:11.020856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cef4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106967be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106967dc0>]}
+
+
+============================== 14:24:11.023716 | 21b0de82-d96c-45d8-a059-9515d47d94d1 ==============================
+[0m14:24:11.023716 [info ] [MainThread]: Running with dbt=1.8.0
+[0m14:24:11.024129 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/kvalkenier/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/kvalkenier/Desktop/gpt_dbt_test/dbt_project/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:24:13.854297 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m14:24:13.854690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '21b0de82-d96c-45d8-a059-9515d47d94d1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130650820>]}
+[0m14:24:13.935360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21b0de82-d96c-45d8-a059-9515d47d94d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ed7550>]}
+[0m14:24:13.961895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21b0de82-d96c-45d8-a059-9515d47d94d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106136f10>]}
+[0m14:24:13.962836 [info ] [MainThread]: Registered adapter: snowflake=1.8.1
+[0m14:24:14.006186 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m14:24:14.006835 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:24:14.007100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '21b0de82-d96c-45d8-a059-9515d47d94d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130738490>]}
+[0m14:24:14.628576 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.social_media_metrics.instagram_metrics' (models/instagram_metrics.sql) depends on a node named 'INSTAGRAM_BUSINESS.MEDIA_HISTORY' which was not found
+[0m14:24:14.678157 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.6930702, "process_user_time": 4.036432, "process_kernel_time": 0.401788, "process_mem_max_rss": "175407104", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:24:14.678698 [debug] [MainThread]: Command `dbt run` failed at 14:24:14.678625 after 3.69 seconds
+[0m14:24:14.679005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cef4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1306ece20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130d8ca30>]}
+[0m14:24:14.679297 [debug] [MainThread]: Flushing usage events
+[0m14:24:53.840297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10312b520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cdeb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cded60>]}
+
+
+============================== 14:24:53.843165 | 3b395712-e158-483e-a909-486d92cd9c1e ==============================
+[0m14:24:53.843165 [info ] [MainThread]: Running with dbt=1.8.0
+[0m14:24:53.843616 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/kvalkenier/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/kvalkenier/Desktop/gpt_dbt_test/dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:24:56.614368 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m14:24:56.614734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124491490>]}
+[0m14:24:56.692902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1244dc910>]}
+[0m14:24:56.719573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079de0d0>]}
+[0m14:24:56.720472 [info ] [MainThread]: Registered adapter: snowflake=1.8.1
+[0m14:24:56.771936 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m14:24:56.772645 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:24:56.772908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12456de20>]}
+[0m14:24:57.435255 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.social_media_metrics.youtube
+- models.social_media_metrics.instagram
+[0m14:24:57.441763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127a62fd0>]}
+[0m14:24:57.494227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1279fc160>]}
+[0m14:24:57.494558 [info ] [MainThread]: Found 2 models, 2 sources, 444 macros
+[0m14:24:57.494743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1035a7ca0>]}
+[0m14:24:57.495471 [info ] [MainThread]: 
+[0m14:24:57.495766 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:24:57.498082 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_brainbridge_dwh'
+[0m14:24:57.505721 [debug] [ThreadPool]: Using snowflake connection "list_brainbridge_dwh"
+[0m14:24:57.505967 [debug] [ThreadPool]: On list_brainbridge_dwh: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "connection_name": "list_brainbridge_dwh"} */
+show terse schemas in database brainbridge_dwh
+    limit 10000
+[0m14:24:57.506126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:58.566849 [debug] [ThreadPool]: SQL status: SUCCESS 18 in 1.0 seconds
+[0m14:24:58.570944 [debug] [ThreadPool]: On list_brainbridge_dwh: Close
+[0m14:24:58.761428 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_brainbridge_dwh, now create_brainbridge_dwh_social_media)
+[0m14:24:58.762719 [debug] [ThreadPool]: Creating schema "database: "brainbridge_dwh"
+schema: "social_media"
+"
+[0m14:24:58.769134 [debug] [ThreadPool]: Using snowflake connection "create_brainbridge_dwh_social_media"
+[0m14:24:58.769443 [debug] [ThreadPool]: On create_brainbridge_dwh_social_media: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "connection_name": "create_brainbridge_dwh_social_media"} */
+create schema if not exists brainbridge_dwh.social_media
+[0m14:24:58.769628 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:24:59.500664 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:24:59.502917 [debug] [ThreadPool]: On create_brainbridge_dwh_social_media: Close
+[0m14:24:59.720638 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_brainbridge_dwh_social_media, now list_brainbridge_dwh_social_media)
+[0m14:24:59.727568 [debug] [ThreadPool]: Using snowflake connection "list_brainbridge_dwh_social_media"
+[0m14:24:59.727873 [debug] [ThreadPool]: On list_brainbridge_dwh_social_media: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "connection_name": "list_brainbridge_dwh_social_media"} */
+show terse objects in brainbridge_dwh.social_media limit 10000
+[0m14:24:59.728055 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:25:00.373379 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m14:25:00.376607 [debug] [ThreadPool]: On list_brainbridge_dwh_social_media: Close
+[0m14:25:00.577618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127ab6130>]}
+[0m14:25:00.578940 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:25:00.579615 [info ] [MainThread]: 
+[0m14:25:00.583108 [debug] [Thread-1  ]: Began running node model.social_media_metrics.instagram_metrics
+[0m14:25:00.583427 [debug] [Thread-2  ]: Began running node model.social_media_metrics.youtube_metrics
+[0m14:25:00.583841 [info ] [Thread-1  ]: 1 of 2 START sql view model social_media.instagram_metrics ..................... [RUN]
+[0m14:25:00.584149 [info ] [Thread-2  ]: 2 of 2 START sql view model social_media.youtube_metrics ....................... [RUN]
+[0m14:25:00.584457 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_brainbridge_dwh_social_media, now model.social_media_metrics.instagram_metrics)
+[0m14:25:00.584720 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.social_media_metrics.youtube_metrics'
+[0m14:25:00.584926 [debug] [Thread-1  ]: Began compiling node model.social_media_metrics.instagram_metrics
+[0m14:25:00.585336 [debug] [Thread-2  ]: Began compiling node model.social_media_metrics.youtube_metrics
+[0m14:25:00.590124 [debug] [Thread-1  ]: Writing injected SQL for node "model.social_media_metrics.instagram_metrics"
+[0m14:25:00.592340 [debug] [Thread-2  ]: Writing injected SQL for node "model.social_media_metrics.youtube_metrics"
+[0m14:25:00.592938 [debug] [Thread-1  ]: Began executing node model.social_media_metrics.instagram_metrics
+[0m14:25:00.593150 [debug] [Thread-2  ]: Began executing node model.social_media_metrics.youtube_metrics
+[0m14:25:00.609155 [debug] [Thread-1  ]: Writing runtime sql for node "model.social_media_metrics.instagram_metrics"
+[0m14:25:00.611160 [debug] [Thread-2  ]: Writing runtime sql for node "model.social_media_metrics.youtube_metrics"
+[0m14:25:00.612101 [debug] [Thread-2  ]: Using snowflake connection "model.social_media_metrics.youtube_metrics"
+[0m14:25:00.612612 [debug] [Thread-1  ]: Using snowflake connection "model.social_media_metrics.instagram_metrics"
+[0m14:25:00.612833 [debug] [Thread-2  ]: On model.social_media_metrics.youtube_metrics: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "node_id": "model.social_media_metrics.youtube_metrics"} */
+create or replace   view brainbridge_dwh.social_media.youtube_metrics
+  
+   as (
+    with youtube_videos as (
+    select
+        date_trunc('day', snippet_published_at) as creation_date,
+        'youtube' as platform,
+        count(id) as media_produced
+    from brainbridge_dwh.YOUTUBE_ANALYTICS.video
+    group by creation_date
+)
+select * from youtube_videos
+  );
+[0m14:25:00.613082 [debug] [Thread-1  ]: On model.social_media_metrics.instagram_metrics: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "node_id": "model.social_media_metrics.instagram_metrics"} */
+create or replace   view brainbridge_dwh.social_media.instagram_metrics
+  
+   as (
+    with instagram_media as (
+    select
+        date_trunc('day', created_time) as creation_date,
+        'instagram' as platform,
+        count(id) as media_produced
+    from brainbridge_dwh.INSTAGRAM_BUSINESS.media_history
+    group by creation_date
+)
+select * from instagram_media
+  );
+[0m14:25:00.613296 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m14:25:00.613485 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:25:01.298222 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:25:01.314352 [debug] [Thread-1  ]: On model.social_media_metrics.instagram_metrics: Close
+[0m14:25:01.316671 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:25:01.317804 [debug] [Thread-2  ]: On model.social_media_metrics.youtube_metrics: Close
+[0m14:25:01.535457 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x15225faf0>]}
+[0m14:25:01.537414 [info ] [Thread-1  ]: 1 of 2 OK created sql view model social_media.instagram_metrics ................ [[32mSUCCESS 1[0m in 0.95s]
+[0m14:25:01.538415 [debug] [Thread-1  ]: Finished running node model.social_media_metrics.instagram_metrics
+[0m14:25:01.538913 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b395712-e158-483e-a909-486d92cd9c1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x152280d30>]}
+[0m14:25:01.539499 [info ] [Thread-2  ]: 2 of 2 OK created sql view model social_media.youtube_metrics .................. [[32mSUCCESS 1[0m in 0.95s]
+[0m14:25:01.539851 [debug] [Thread-2  ]: Finished running node model.social_media_metrics.youtube_metrics
+[0m14:25:01.540581 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:25:01.540763 [debug] [MainThread]: Connection 'model.social_media_metrics.instagram_metrics' was properly closed.
+[0m14:25:01.540903 [debug] [MainThread]: Connection 'model.social_media_metrics.youtube_metrics' was properly closed.
+[0m14:25:01.541113 [info ] [MainThread]: 
+[0m14:25:01.541300 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.05 seconds (4.05s).
+[0m14:25:01.541735 [debug] [MainThread]: Command end result
+[0m14:25:01.560111 [info ] [MainThread]: 
+[0m14:25:01.560427 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:25:01.560609 [info ] [MainThread]: 
+[0m14:25:01.560793 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m14:25:01.601263 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.8008685, "process_user_time": 4.555473, "process_kernel_time": 0.479272, "process_mem_max_rss": "186417152", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:25:01.602044 [debug] [MainThread]: Command `dbt run` succeeded at 14:25:01.601943 after 7.80 seconds
+[0m14:25:01.602424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10312b520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127340760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127a8c370>]}
+[0m14:25:01.602883 [debug] [MainThread]: Flushing usage events
+[0m14:30:01.568596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10650b550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081863d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081861f0>]}
+
+
+============================== 14:30:01.571813 | 86f8efae-46e3-45fa-ab52-c7f0119202d9 ==============================
+[0m14:30:01.571813 [info ] [MainThread]: Running with dbt=1.8.0
+[0m14:30:01.572227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/kvalkenier/Desktop/dbt_test/gpt_dbt_test/dbt_project/logs', 'profiles_dir': '/Users/kvalkenier/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:03.954063 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m14:30:03.954417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12872aa60>]}
+[0m14:30:04.093124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108153640>]}
+[0m14:30:04.119684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107999be0>]}
+[0m14:30:04.120375 [info ] [MainThread]: Registered adapter: snowflake=1.8.1
+[0m14:30:04.170740 [debug] [MainThread]: checksum: dbb12d416fdb55e3665e4828703bbedf40c5c90ed7ca6ff39bbbfb29b12b0a92, vars: {}, profile: , target: , version: 1.8.0
+[0m14:30:04.245349 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:30:04.245610 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:30:04.248518 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.social_media_metrics.youtube
+- models.social_media_metrics.instagram
+[0m14:30:04.266223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128f53130>]}
+[0m14:30:04.321180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128f2efa0>]}
+[0m14:30:04.321665 [info ] [MainThread]: Found 2 models, 2 sources, 444 macros
+[0m14:30:04.321886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128f6a850>]}
+[0m14:30:04.322817 [info ] [MainThread]: 
+[0m14:30:04.323175 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:30:04.325617 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_brainbridge_dwh'
+[0m14:30:04.333907 [debug] [ThreadPool]: Using snowflake connection "list_brainbridge_dwh"
+[0m14:30:04.334179 [debug] [ThreadPool]: On list_brainbridge_dwh: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "connection_name": "list_brainbridge_dwh"} */
+show terse schemas in database brainbridge_dwh
+    limit 10000
+[0m14:30:04.334361 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:05.534146 [debug] [ThreadPool]: SQL status: SUCCESS 19 in 1.0 seconds
+[0m14:30:05.536987 [debug] [ThreadPool]: On list_brainbridge_dwh: Close
+[0m14:30:05.740505 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_brainbridge_dwh, now list_brainbridge_dwh_social_media)
+[0m14:30:05.746506 [debug] [ThreadPool]: Using snowflake connection "list_brainbridge_dwh_social_media"
+[0m14:30:05.746888 [debug] [ThreadPool]: On list_brainbridge_dwh_social_media: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "connection_name": "list_brainbridge_dwh_social_media"} */
+show terse objects in brainbridge_dwh.social_media limit 10000
+[0m14:30:05.747109 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:30:06.419949 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m14:30:06.426880 [debug] [ThreadPool]: On list_brainbridge_dwh_social_media: Close
+[0m14:30:06.651286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12876ad00>]}
+[0m14:30:06.651944 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:30:06.652296 [info ] [MainThread]: 
+[0m14:30:06.656257 [debug] [Thread-1  ]: Began running node model.social_media_metrics.instagram_metrics
+[0m14:30:06.656691 [debug] [Thread-2  ]: Began running node model.social_media_metrics.youtube_metrics
+[0m14:30:06.657254 [info ] [Thread-1  ]: 1 of 2 START sql view model social_media.instagram_metrics ..................... [RUN]
+[0m14:30:06.657753 [info ] [Thread-2  ]: 2 of 2 START sql view model social_media.youtube_metrics ....................... [RUN]
+[0m14:30:06.658227 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_brainbridge_dwh_social_media, now model.social_media_metrics.instagram_metrics)
+[0m14:30:06.659009 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.social_media_metrics.youtube_metrics'
+[0m14:30:06.659337 [debug] [Thread-1  ]: Began compiling node model.social_media_metrics.instagram_metrics
+[0m14:30:06.659734 [debug] [Thread-2  ]: Began compiling node model.social_media_metrics.youtube_metrics
+[0m14:30:06.668097 [debug] [Thread-1  ]: Writing injected SQL for node "model.social_media_metrics.instagram_metrics"
+[0m14:30:06.671886 [debug] [Thread-2  ]: Writing injected SQL for node "model.social_media_metrics.youtube_metrics"
+[0m14:30:06.672945 [debug] [Thread-1  ]: Began executing node model.social_media_metrics.instagram_metrics
+[0m14:30:06.673307 [debug] [Thread-2  ]: Began executing node model.social_media_metrics.youtube_metrics
+[0m14:30:06.705900 [debug] [Thread-1  ]: Writing runtime sql for node "model.social_media_metrics.instagram_metrics"
+[0m14:30:06.706351 [debug] [Thread-2  ]: Writing runtime sql for node "model.social_media_metrics.youtube_metrics"
+[0m14:30:06.707350 [debug] [Thread-1  ]: Using snowflake connection "model.social_media_metrics.instagram_metrics"
+[0m14:30:06.708030 [debug] [Thread-2  ]: Using snowflake connection "model.social_media_metrics.youtube_metrics"
+[0m14:30:06.708332 [debug] [Thread-1  ]: On model.social_media_metrics.instagram_metrics: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "node_id": "model.social_media_metrics.instagram_metrics"} */
+create or replace   view brainbridge_dwh.social_media.instagram_metrics
+  
+   as (
+    with instagram_media as (
+    select
+        date_trunc('day', created_time) as creation_date,
+        'instagram' as platform,
+        count(id) as media_produced
+    from brainbridge_dwh.INSTAGRAM_BUSINESS.media_history
+    group by creation_date
+)
+select * from instagram_media
+  );
+[0m14:30:06.708673 [debug] [Thread-2  ]: On model.social_media_metrics.youtube_metrics: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "gpt_dbt_test", "target_name": "dev", "node_id": "model.social_media_metrics.youtube_metrics"} */
+create or replace   view brainbridge_dwh.social_media.youtube_metrics
+  
+   as (
+    with youtube_videos as (
+    select
+        date_trunc('day', snippet_published_at) as creation_date,
+        'youtube' as platform,
+        count(id) as media_produced
+    from brainbridge_dwh.YOUTUBE_ANALYTICS.video
+    group by creation_date
+)
+select * from youtube_videos
+  );
+[0m14:30:06.708990 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:30:06.709255 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m14:30:07.835968 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:30:07.862971 [debug] [Thread-1  ]: On model.social_media_metrics.instagram_metrics: Close
+[0m14:30:08.096953 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128600280>]}
+[0m14:30:08.098089 [info ] [Thread-1  ]: 1 of 2 OK created sql view model social_media.instagram_metrics ................ [[32mSUCCESS 1[0m in 1.44s]
+[0m14:30:08.098743 [debug] [Thread-1  ]: Finished running node model.social_media_metrics.instagram_metrics
+[0m14:30:08.338994 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m14:30:08.345192 [debug] [Thread-2  ]: On model.social_media_metrics.youtube_metrics: Close
+[0m14:30:08.599822 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86f8efae-46e3-45fa-ab52-c7f0119202d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129a44c70>]}
+[0m14:30:08.601759 [info ] [Thread-2  ]: 2 of 2 OK created sql view model social_media.youtube_metrics .................. [[32mSUCCESS 1[0m in 1.94s]
+[0m14:30:08.602702 [debug] [Thread-2  ]: Finished running node model.social_media_metrics.youtube_metrics
+[0m14:30:08.603899 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:30:08.604229 [debug] [MainThread]: Connection 'model.social_media_metrics.instagram_metrics' was properly closed.
+[0m14:30:08.604498 [debug] [MainThread]: Connection 'model.social_media_metrics.youtube_metrics' was properly closed.
+[0m14:30:08.604858 [info ] [MainThread]: 
+[0m14:30:08.605186 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.28 seconds (4.28s).
+[0m14:30:08.605931 [debug] [MainThread]: Command end result
+[0m14:30:08.634661 [info ] [MainThread]: 
+[0m14:30:08.635130 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:30:08.635442 [info ] [MainThread]: 
+[0m14:30:08.635782 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m14:30:08.682244 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.1535554, "process_user_time": 3.734237, "process_kernel_time": 0.437571, "process_mem_max_rss": "187400192", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:30:08.682846 [debug] [MainThread]: Command `dbt run` succeeded at 14:30:08.682774 after 7.15 seconds
+[0m14:30:08.683201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10650b550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10689c760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b87910>]}
+[0m14:30:08.683585 [debug] [MainThread]: Flushing usage events

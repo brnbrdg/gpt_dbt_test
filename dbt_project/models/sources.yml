@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: instagram
+    schema: INSTAGRAM_BUSINESS
+    tables:
+      - name: media_history
+        description: "History of media posts on Instagram"
+
+  - name: youtube
+    schema: YOUTUBE_ANALYTICS
+    tables:
+      - name: video
+        description: "YouTube video data"

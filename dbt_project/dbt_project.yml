@@ -1,0 +1,15 @@
+name: 'social_media_metrics'
+version: '1.0'
+profile: 'gpt_dbt_test'
+
+source-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  social_media_metrics:
+    instagram:
+      materialized: view
+    youtube:
+      materialized: view
+
